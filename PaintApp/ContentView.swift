@@ -17,8 +17,7 @@ struct ContentView: View {
     
     @State private var currentLine = Line()
     @State private var lines: [Line] = []
-    @State private var selectedColor: Color = .red
-    @State private var thickness: Double = 0.0
+    @State private var thickness: Double = 1.0
     
     var body: some View {
         VStack {
@@ -42,7 +41,7 @@ struct ContentView: View {
               })
             .onEnded({ value in
                 self.lines.append(currentLine)
-                self.currentLine = Line(points: [], color: selectedColor, lineWidth: thickness)
+                self.currentLine = Line(points: [], color: currentLine.color, lineWidth: thickness)
             })
             )
             
@@ -55,8 +54,9 @@ struct ContentView: View {
                         currentLine.lineWidth = newThickness
                     }
                 Divider()
-                ColorPickerView(selectedColor: $selectedColor)
-                    .onChange(of: selectedColor) { newColor in
+                ColorPickerView(selectedColor: $currentLine.color)
+                    .onChange(of: currentLine.color) { newColor in
+                        print(newColor)
                         currentLine.color = newColor
                 }
             }
