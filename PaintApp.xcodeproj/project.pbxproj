@@ -11,6 +11,8 @@
 		8DCF6C59275F9E3F00604D71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF6C58275F9E3F00604D71 /* ContentView.swift */; };
 		8DCF6C5B275F9E4000604D71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DCF6C5A275F9E4000604D71 /* Assets.xcassets */; };
 		8DCF6C5E275F9E4000604D71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DCF6C5D275F9E4000604D71 /* Preview Assets.xcassets */; };
+		8DCF6C66275FA13500604D71 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF6C65275FA13500604D71 /* Constants.swift */; };
+		8DCF6C68275FA17700604D71 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF6C67275FA17700604D71 /* ColorPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		8DCF6C5A275F9E4000604D71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DCF6C5D275F9E4000604D71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8DCF6C5F275F9E4000604D71 /* PaintApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PaintApp.entitlements; sourceTree = "<group>"; };
+		8DCF6C65275FA13500604D71 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8DCF6C67275FA17700604D71 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				8DCF6C5A275F9E4000604D71 /* Assets.xcassets */,
 				8DCF6C5F275F9E4000604D71 /* PaintApp.entitlements */,
 				8DCF6C5C275F9E4000604D71 /* Preview Content */,
+				8DCF6C65275FA13500604D71 /* Constants.swift */,
+				8DCF6C67275FA17700604D71 /* ColorPickerView.swift */,
 			);
 			path = PaintApp;
 			sourceTree = "<group>";
@@ -139,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DCF6C68275FA17700604D71 /* ColorPickerView.swift in Sources */,
 				8DCF6C59275F9E3F00604D71 /* ContentView.swift in Sources */,
 				8DCF6C57275F9E3F00604D71 /* PaintAppApp.swift in Sources */,
+				8DCF6C66275FA13500604D71 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
